@@ -1,0 +1,70 @@
+<div class="card">
+    <div class="card-header text-center">
+        <h4>Listar datos de UF</h4>
+    </div>
+    <div id="card-body-listar-uf" class="card-body">
+        <form id="form-carga-inicial-indicadores" class="row g-3">
+            <div id="mensaje-cargar-lista"></div>
+            <div class="input-group m-0 mb-3">
+                <label class="col-12 col-sm-auto me-3" for="">Ingrese usuario:</label>
+                <input class="col-12 col-sm-auto form-control" type="text" placeholder="Correo ficticio de usuario"
+                    id="username" name="username">
+                <button id="btn-traer-indicadores" class="btn btn-outline-secondary" type="submit" disabled>Traer
+                    indicadores</button>
+            </div>
+        </form>
+
+        <div id="tableUF-container" class="col-12 table-responsive d-none">
+            <table id="tableUF" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Unidad de medida</th>
+                        <th>Valor</th>
+                        <th>Fecha</th>
+                        <th>Origen</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tableUF-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="modal-editar-uf" class="modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form id="form-editar-indicador">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Editar UF</h4>
+                    <button id="close-modal-editar" data-indice="" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6">
+                                <label for="">Valor</label><span class="text-danger ms-1">*</span>
+                                <input class="col-12 form-control" type="number" placeholder="0.0" step="0.01"
+                                    name="uf-valor" id="edit-valor" min="0" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="">Fecha</label><span class="text-danger ms-1">*</span>
+                                <input class="col-12 form-control" type="date" name="uf-fecha" id="edit-fecha" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="uf-id" id="edit-id" value="">
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-success">Mantener</button>
+                    <input type="submit" value="Editar" id="btn-editar-form" class="btn btn-warning">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

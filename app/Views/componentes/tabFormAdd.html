@@ -1,0 +1,27 @@
+<form id="form-agregar-indicador">
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>Agregue una nueva UF</h4>
+        </div>
+        <div class="card-body">
+            <p id="msnInitFormAdd">No se han cargado datos todavía.</p>
+            <div id="form-add-container" class="container d-none">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6">
+                        <label for="">Valor</label>
+                        <input class="col-12 form-control" type="number" placeholder="0.0" step="0.01" name="uf-valor"
+                            id="add-valor" min="0" required>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="">Fecha</label>
+                        <input class="col-12 form-control" type="date" name="uf-fecha" id="add-fecha" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form-footer-add-container" class="card-footer text-end d-none">
+            <input type="button" value="Limpiar" id="btn-limpiar-form" onclick="limpiarForm()" class="btn btn-dark">
+            <input type="submit" value="Agregar" id="btn-agregar-form" class="btn btn-primary" disabled>
+        </div>
+    </div>
+</form>

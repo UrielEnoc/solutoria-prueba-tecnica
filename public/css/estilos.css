@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    background-color: #428BCA !important;
+}
+
+header {
+    background-color: #FFF !important;
+    box-shadow: 0px 173px 157px 125px rgba(255, 255, 255, 1);
+}
+
+@media (max-height: 970px) {
+    header {
+        background-color: #FFF !important;
+        box-shadow: 0px 62px 121px 110px rgba(255, 255, 255, 1);
+    }
+}
+
+@media (max-height: 800px) {
+    header {
+        background-color: #FFF !important;
+        box-shadow: 0px 62px 0px 1px rgba(255, 255, 255, 1);
+    }
+}
+
+
+#title {
+    line-height: 23px;
+    position: relative;
+    color: #0154A3;
+    font-size: 60px;
+    font-weight: 400;
+    left: -26px;
+    margin-bottom: 33px;
+}
+
+#logo-solutoria {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+#description {
+    color: #55BEC9;
+    font-size: 18px;
+    top: -43px;
+    position: relative;
+    font-weight: 600;
+}
+
+@media (max-width: 560px) {
+    #title {
+        font-size: 40px;
+    }
+    #logo-solutoria{
+        width: 50px;
+    }
+    #description {
+        top: -30px;
+    }
+}
+
+@media (max-width: 493px) {
+    #title {
+        font-size: 31px;
+    }
+    #description {
+        top: -23px;
+    }
+}
+
+#mainSection {
+    margin-bottom: 50px;
+}
+
+#gaton {
+    z-index: 10;
+    position: sticky;
+    width: 200px;
+    margin-left: calc(100% - 210px);
+}
+
+ul#pills-tab li button.nav-link {
+    color: #555555 !important;
+    border-bottom: solid 1px #FFF !important;
+}
+
+ul#pills-tab li button.nav-link:hover {
+    border-bottom: solid 1px #428bca !important;
+    color: #333333 !important;
+}
+
+footer {
+    background-color: #222222;
+    height: 250px;
+    min-height: 250px;
+    padding: 0px 20px 20px 20px;
+    margin-top: auto;
+    box-shadow: inset 3px 66px 0px -2px #428BCA;
+    background: linear-gradient(to bottom, #1b1b1b 0%, rgba(89, 89, 89, 1) 22%, rgba(44, 44, 44, 1) 40%, rgba(19, 19, 19, 1) 60%);
+}
+
+.li-contact{
+    float: left;
+    margin-right: 15px;
+}
